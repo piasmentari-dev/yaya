@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MELLUPI ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Jua&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sparkle s1">✦</div>
+<div class="sparkle s2">♡</div>
+<div class="sparkle s3">✧</div>
+<div class="sparkle s4">☆</div>
+
+<main class="board">
+
+  <div class="fabric"></div>
+  <div class="lace"></div>
+
+  <header class="top">
+    <div class="tiny">오늘도 반짝반짝 ♡</div>
+
+    <h1>MELLUPI</h1>
+
+    <div class="subtitle">
+      작은 세계에 오신 걸 환영해요
+    </div>
+
+    <button class="ribbon-btn" onclick="openLetter()">
+      ♡ 여기를 눌러봐 ♡
+    </button>
+  </header>
+
+
+  <section class="member-card">
+
+    <div class="card-rainbow"></div>
+
+    <div class="card-head">
+      <span>✧ MELLUPI ✧</span>
+      <span>멜루피 회원증</span>
+    </div>
+
+    <div class="profile-area">
+
+      <div class="photo" onclick="changeFace()">
+        <div id="face">૮ ˶ᵔ ᵕ ᵔ˶ ა</div>
+        <small>click me ♡</small>
+      </div>
+
+      <div class="profile-text">
+        <p class="label">이름 / NAME</p>
+        <h2>Mellupi</h2>
+
+        <p class="label">오늘의 기분</p>
+        <button class="mood" onclick="changeMood()">
+          <span id="mood">행복해 ♡</span>
+        </button>
+
+        <p class="label">좋아하는 것</p>
+        <p class="likes">리본 · 별 · 작은 추억</p>
+      </div>
+
+    </div>
+
+    <div class="card-bottom">
+      <span>NO. 0212</span>
+      <span>♡ ♡ ♡</span>
+    </div>
+
+  </section>
+
+
+  <div class="sticker star" onclick="pop(this)">★</div>
+  <div class="sticker heart" onclick="pop(this)">♥</div>
+  <div class="sticker flower" onclick="pop(this)">✿</div>
+  <div class="sticker bow" onclick="pop(this)">🎀</div>
+
+
+  <section class="note">
+    <div class="pin">●</div>
+
+    <h3>오늘의 작은 메모</h3>
+
+    <p id="noteText">
+      천천히 둘러봐요.<br>
+      이곳에는 작은 비밀이 숨어 있어요.
+    </p>
+
+    <button onclick="newNote()">
+      메모 열어보기
+    </button>
+  </section>
+
+
+  <section class="mini-links">
+
+    <button onclick="showBox('secret')">
+      💌 비밀 편지
+    </button>
+
+    <button onclick="showBox('fortune')">
+      ✨ 오늘의 운세
+    </button>
+
+    <button onclick="showBox('memory')">
+      🧸 작은 추억
+    </button>
+
+  </section>
+
+
+  <section id="popup" class="popup">
+    <div class="popup-inner">
+
+      <button class="close" onclick="closeBox()">×</button>
+
+      <div id="popupIcon">♡</div>
+      <h2 id="popupTitle">MELLUPI</h2>
+      <p id="popupText"></p>
+
+      <button onclick="closeBox()" class="ok">
+        돌아가기 ♡
+      </button>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <span>멜루피의 작은 세계</span>
+    <b>♡</b>
+    <span>천천히 머물다 가요</span>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+
+</html><section class="collection">
+
+  <div class="collection-title">
+    <span>✦ MELLUPI COLLECTION ✦</span>
+    <small>little things I keep</small>
+  </div>
+
+  <div class="collection-grid">
+
+    <button onclick="showBox('about')">
+      <span>🎀</span>
+      <b>ABOUT ME</b>
+      <small>a tiny introduction</small>
+    </button>
+
+    <button onclick="showBox('favorites')">
+      <span>⭐</span>
+      <b>FAVORITES</b>
+      <small>things I adore</small>
+    </button>
+
+    <button onclick="showBox('dream')">
+      <span>☁</span>
+      <b>DREAM NOTE</b>
+      <small>somewhere in my head</small>
+    </button>
+
+    <button onclick="showBox('message')">
+      <span>💗</span>
+      <b>FOR YOU</b>
+      <small>open this slowly</small>
+    </button>
+
+  </div>
+
+</section>
+
+
+<section class="mini-profile">
+
+  <div class="profile-ribbon">MELLUPI ♡ MEMBER</div>
+
+  <div class="profile-content">
+
+    <div class="tiny-photo">
+      <span>૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</span>
+    </div>
+
+    <div>
+      <small>PROFILE CARD / 0212</small>
+      <h2>hello, i'm Mellupi!</h2>
+
+      <p>
+        A little world filled with ribbons,
+        tiny memories, pretty things and
+        random moments worth keeping.
+      </p>
+
+      <div class="tags">
+        <span>cute things</span>
+        <span>pink lover</span>
+        <span>dreamy days</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="sticker-board">
+
+  <div class="board-title">
+    MY LITTLE STICKER WALL
+  </div>
+
+  <div class="stickers">
+
+    <span onclick="pop(this)">♡</span>
+    <span onclick="pop(this)">★</span>
+    <span onclick="pop(this)">🎀</span>
+    <span onclick="pop(this)">🌷</span>
+    <span onclick="pop(this)">🧸</span>
+    <span onclick="pop(this)">✦</span>
+    <span onclick="pop(this)">🍓</span>
+    <span onclick="pop(this)">☁</span>
+    <span onclick="pop(this)">💌</span>
+    <span onclick="pop(this)">⭐</span>
+
+  </div>
+
+  <p>click the stickers ♡</p>
+
+</section>
+
+
+<section class="tiny-player">
+
+  <div class="cassette">♫</div>
+
+  <div class="song-info">
+    <small>NOW PLAYING</small>
+    <strong>A little song for you ♡</strong>
+    <span>mellupi radio · 01:21</span>
+  </div>
+
+  <button onclick="playFakeSong(this)">▶</button>
+
+</section>
